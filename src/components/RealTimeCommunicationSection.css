@@ -1,0 +1,13 @@
+/* RealTimeCommunicationSection.css */
+.real-time-communication-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.real-time-communication-section p {
+  font-size: 1.2em;
+}
+
+.chat-interface {
+  /* Add styles for your chat interface library */
+}

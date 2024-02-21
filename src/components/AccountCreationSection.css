@@ -1,0 +1,126 @@
+/* AccountCreationSection.css */
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styles */
+.account-creation-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Step Progress Styles */
+.step-progress {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.step-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  position: relative;
+}
+
+.step-dot.active {
+  background-color: #2196f3;
+}
+
+/* Tooltip Styles */
+.tooltip {
+  visibility: hidden;
+  width: 150px;
+  background-color: #2196f3;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 130%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.step-dot:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Form Styles */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.signup-form input {
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.signup-form input:hover {
+  border-color: #2196f3;
+}
+
+.password-strength {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.primary-btn {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  background-color: #0c7cd5;
+  transform: scale(1.05);
+}
+
+/* Error Message Styles */
+.error-message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .account-creation-section {
+    padding: 10px;
+  }
+
+  .step-progress {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup-form {
+    max-width: 100%;
+  }
+}

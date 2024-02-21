@@ -1,0 +1,69 @@
+.introduction-section {
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(10, 14, 14); /* Light grey background */
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 70vh; /* Set banner height to half viewport */
+  background-color: rgba(156, 131, 131, 0.7); /* Use primary green color */
+}
+
+.banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8; /* Reduce video opacity for text readability */
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-family: Roboto, sans-serif; /* Modern and clean font */
+  font-size: 2.5em;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.introduction-section p {
+  font-size: 1.4em; /* Increased size for better readability */
+  line-height: 1.5; /* Slightly increase line spacing */
+  color: white;
+  font-family: Open Sans, sans-serif;
+}
+
+.introduction-section button {
+  background-color: #45a049; /* Use darker green accent */
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.4em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px; /* Add subtle rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.introduction-section button:hover {
+  background-color: #3e8c42; /* Slightly darker shade on hover */
+}
+
+/* Add optional animations here */
+
+.introduction-section h3 {
+  animation: fade-in 1s ease-in-out; /* Example animation for text */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
